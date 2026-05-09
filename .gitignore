@@ -1,0 +1,22 @@
+# Python environment
+venv/
+env/
+.env
+__pycache__/
+*.py[cod]
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+
+# Data
+data/raw/*
+!data/raw/.gitkeep
+*.csv
+*.parquet
+
+# VS Code
+.vscode/
+
+# OS generated files
+.DS_Store
+Thumbs.db
