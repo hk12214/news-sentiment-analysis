@@ -1,58 +1,47 @@
-## Financial News Sentiment Analysis & Stock Price Correlation
-### 📌 Project Overview
-This project is part of my Data Analyst role at Nova Financial Solutions. The goal is to analyze a large corpus of financial news data to discover correlations between news sentiment and stock market movements. This work assists the investment team in making data-driven decisions based on market narratives.
+# Financial News Sentiment and Stock Price Analysis
 
-### 🛠️ Tech Stack
-Language: Python 3.12
+## 📌 Project Overview
+This project explores the relationship between financial news headlines and stock market movements for five major tech companies: **AAPL, AMZN, GOOG, META, and NVDA**. 
 
-Environment: GitHub Actions (CI/CD)
+The goal was to determine if the "sentiment" (mood) of the news acts as a leading indicator for stock returns using Natural Language Processing (NLP) and Quantitative Analysis.
 
-Libraries: Pandas, Matplotlib, Seaborn, Scikit-learn, TA-Lib
+## 🛠️ Tech Stack
+*   **Language:** Python 3.x
+*   **Data Analysis:** Pandas, NumPy
+*   **NLP:** NLTK (VADER Sentiment Analysis)
+*   **Technical Analysis:** TA-Lib (SMA, RSI)
+*   **Visualization:** Matplotlib, Seaborn
 
-Version Control: Git/GitHub using Task-based branching.
+## 🚀 Tasks Completed
 
-### 📂 Project Structure
-Plaintext
-├── .github/workflows/   # CI/CD pipeline (YAML)
-├── data/                # Raw and Processed data
-├── notebooks/           # Jupyter Notebooks (Task 1: EDA)
-├── src/                 # Source code for data processing
-├── requirements.txt     # Project dependencies
-└── README.md            # Project documentation
-### 🚀 Task 1: Exploratory Data Analysis (EDA)
-In this initial phase, I analyzed the FNSPID (Financial News Sentiment and Stock Price Index Dataset). Key findings include:
+### Task 1: Sentiment Analysis
+*   Cleaned and preprocessed a large dataset of financial news headlines.
+*   Applied **VADER Sentiment Analysis** to assign a "Compound Score" (ranging from -1 to 1) to each headline.
+*   Identified news publication trends and sentiment spikes over time.
 
-Headline Lengths: Most headlines are concise (40-80 characters).
+### Task 2: Quantitative Analysis (Technical Indicators)
+*   Calculated daily stock returns for the selected tickers.
+*   Implemented technical indicators using **TA-Lib**:
+    *   **SMA (20-Day):** To identify price trends.
+    *   **RSI (Relative Strength Index):** To identify overbought or oversold conditions.
+    *   **Rolling Volatility:** To measure market risk.
+*   Generated a **Correlation Heatmap** to see how tech stocks move in relation to one another.
 
-Publication Trends: Identified major spikes in news volume correlating with market events.
+### Task 3: Sentiment & Price Correlation
+*   Aligned news dates with stock market trading days.
+*   Aggregated daily sentiment scores per stock.
+*   Calculated the **Pearson Correlation Coefficient** between news sentiment and daily price returns.
+*   Visualized findings with a regression scatter plot.
 
-Publisher Analysis: Cleaned and analyzed the top 10 publishers contributing to the dataset.
-
-Topic Modeling: Used keyword extraction to identify themes like "Price Targets," "Earnings," and "FDA Approvals."
-
-### 📈 Task 2: Technical Indicators
-(Work in Progress)
-
-Implementation of Simple Moving Averages (SMA).
-
-Calculation of RSI (Relative Strength Index) to measure price momentum.
-
-Correlation analysis between sentiment scores and stock returns.
-
-⚙️ Setup Instructions
-Clone the repository:
-
-``` bash
-git clone <https://github.com/hk12214/news-sentiment-analysis.git>
-```
-Create and activate a virtual environment:
-
-``` bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-Install dependencies:
-
-``` bash
-pip install -r requirements.txt
-```
+## 📊 Key Visualizations
+1.  **Stock Technical Analysis:** Combined plot of closing prices and RSI indicators.
+2.  **Return Correlation Matrix:** Heatmap showing how closely these tech giants are linked.
+3.  **Sentiment vs. Returns:** Scatter plot showing the mathematical link between news mood and market direction.
+## 📂 Project Structure
+```text
+news-sentiment-analysis/
+├── data/                  
+├── notebooks/       
+├── src/                
+├── requirements.txt    
+└── README.md
