@@ -42,11 +42,15 @@ The goal was to determine if the "sentiment" (mood) of the news acts as a leadin
 ## 📂 Project Structure
 ```text
 news-sentiment-analysis/
-├── data/                  
-├── notebooks/       
-├── src/                
-├── requirements.txt    
-└── README.md
+├── .github/workflows                  
+├──  data/        # Raw and processed CSV data 
+├── notebooks/    # Jupyter Notebooks for experimentation  
+├── tests /   
+├── src/             
+├── scripts/      
+├── .gitignore              
+├── requirements.txt # Project dependencies   
+└── README.md         # Project documentation
 ```
 ## ⚙️ Installation & Usage
 1. **Clone the repo:**
