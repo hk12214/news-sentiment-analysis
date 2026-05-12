@@ -61,7 +61,7 @@ news-sentiment-analysis/
 ```bash
 pip install -r requirements.txt
 ```
-4. **Run the analysis:** 
-   * Open the Jupyter Notebook: `notebooks/correlation_analysis.ipynb`
+3. **Run the analysis:** 
+   ` Open the Jupyter Notebook: `notebooks/correlation_analysis.ipynb`
    
 * Key Insight: We observed a weak positive correlation ($r \approx 0.12$) between headline sentiment and daily returns, suggesting that while news impacts price, it is often "priced in" quickly by the market.
